@@ -1,0 +1,12 @@
+global:
+  tagline: Français
+  about: A propos
+  twitter: Twitter
+  github: GitHub
+langs:
+  en: English
+pages:
+  example: exemple
+  includeexample: Ceci est un test
+titles:
+  pagination: Pagination

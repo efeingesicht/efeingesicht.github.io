@@ -1,11 +1,14 @@
 {% include base_path %}
+{% if page.author and site.data.authors[page.author] %}
+  {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
+{% endif %}
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
-        <ul class="visible-links">
+        <ul class="visible-links" style="display: inline-block" >
           <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
@@ -13,10 +16,22 @@
               {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% if link.title!="Languages" %}
+              <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% endif %}
           {% endfor %}
         </ul>
-        <ul class="hidden-links hidden"></ul>
+        {% if site.lang == "en" %}
+          {% capture link1 %}{{ site.baseurl_root }}/fr{{ page.url}}{% endcapture %}
+          <a href="{{ link1 }}"  style="right:0;position:absolute;width:50px;display: inline-block">
+            <img src="{{ "flagFR.png" | prepend: "/images/" | prepend: base_path }}" style="width:50px" alt="French flag">
+          </a>
+        {% elsif site.lang == "fr" %}
+          {% capture link2 %}{{ site.baseurl_root }}{{ page.url}}{% endcapture %}
+          <a href="{{ link2 }}"  style="right:0;position:absolute;width:50px;display: inline-block">
+            <img src="{{ "flagUK.png" | prepend: "/images/" | prepend: base_path }}" style="width:50px"  alt="Drapeau anglais">
+          </a>
+        {% endif %}
       </nav>
     </div>
   </div>
