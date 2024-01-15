@@ -3,6 +3,8 @@ global:
   about: A propos
   twitter: Twitter
   github: GitHub
+  home: Accueil
+  download: Téléchargement 
 langs:
   en: English
 pages:
@@ -10,3 +12,9 @@ pages:
   includeexample: Ceci est un test
 titles:
   pagination: Pagination
+config:
+  bio: Doctorant
+home:
+  welcome: Bienvenue sur la page académique d'Edouard Feingesicht.
+publi:
+  in: Publié dans
