@@ -17,7 +17,11 @@
               {% assign domain = base_path %}
             {% endif %}
             {% if link.title!="Languages" %}
-              <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+              {% if site.lang == "fr" and link.title2 %}
+                <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title2 }}</a></li>
+              {% else %}
+                <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+              {% endif %}              
             {% endif %}
           {% endfor %}
         </ul>
