@@ -1,5 +1,5 @@
 ---
-permalink: /contact
+permalink: /contact/
 ---
 
 {% if site.lang == "en" %}
