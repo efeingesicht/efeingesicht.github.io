@@ -80,7 +80,7 @@ analytics:
 # Site Author
 author:
   name             : "Edouard Feingesicht"
-  avatar           : 
+  avatar           : "photo.jpg"
   bio              : "{% t global.tagline %}"
   advisor          : "https://godelle.users.lmno.cnrs.fr/"
   location         : 
