@@ -28,12 +28,12 @@
         {% if site.lang == "en" %}
           {% capture link1 %}{{ site.baseurl_root }}/fr{{ page.url}}{% endcapture %}
           <a href="{{ link1 }}"  style="right:0;position:absolute;width:50px;display: inline-block">
-            <img src="{{ "flagFR.png" | prepend: "/images/" | prepend: base_path }}" style="width:50px" alt="French flag">
+            <img src="{{ "flagFR.png" | prepend: "/images/" | prepend: base_path }}" style="width:50px; border:1px solid white" alt="French flag">
           </a>
         {% elsif site.lang == "fr" %}
           {% capture link2 %}{{ site.baseurl_root }}{{ page.url}}{% endcapture %}
           <a href="{{ link2 }}"  style="right:0;position:absolute;width:50px;display: inline-block">
-            <img src="{{ "flagUK.png" | prepend: "/images/" | prepend: base_path }}" style="width:50px"  alt="Drapeau anglais">
+            <img src="{{ "flagUK.png" | prepend: "/images/" | prepend: base_path }}" style="width:50px; border:1px solid white"  alt="Drapeau anglais">
           </a>
         {% endif %}
       </nav>

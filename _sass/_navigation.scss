@@ -83,8 +83,8 @@
       line-height: 1.5;
       text-align: center;
       text-decoration: none;
-      color: mix(#fff, $gray, 25%);
-      border: 1px solid $light-gray;
+      color: $mix90;
+      border: 1px solid $mix25;
       border-radius: 0;
 
       &:hover {
@@ -181,11 +181,11 @@
     display: block;
     margin: 0 1rem;
     padding: 0.5rem 0;
-    color: $masthead-link-color;
+    color: $sectext-color;
     text-decoration: none;
 
     &:hover {
-      color: $masthead-link-color-hover;
+      color: $highlighttext-color;
     }
   }
 
