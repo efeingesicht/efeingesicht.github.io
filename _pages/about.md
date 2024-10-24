@@ -12,8 +12,11 @@ redirect_from:
   Welcome on Edouard Feingesicht's academic website.
 ======
   
-  I am 3rd year PhD student in Caen (France) under the supervision of <a href="{{author.advisor}}"> Eddy Godelle</a>, working on "Structure group of set-theoretical solutions of the Yang-Baxter equation".
-  
+  I am Teaching Assistant in Caen (France).
+
+ I defended my [PhD Thesis](/files/Thesis.pdf) titled "Representatiοns οf structure grοup οf set-theοretical sοlutiοns
+tο the Υang-Baxter equatiοn" on October 11th 2024, under the supervision of <a href="{{author.advisor}}"> Eddy Godelle</a>
+
   I am actively looking for post-doctoral positions. You can read my [Resume](/files/Resume.pdf) and my [Research Statement](/files/ResearchStatement.pdf)
 {% elsif site.lang == "fr" %}
   {% capture link2 %}{{ site.baseurl_root }}{{ page.url}}{% endcapture %}
@@ -21,7 +24,10 @@ redirect_from:
   Bienvenue sur la page académique d'Edouard Feingesicht.
 ======
   
-   Je suis doctorant en 3è année à Caen, sous la direction de <a href="{{author.advisor}}"> Eddy Godelle</a>, travaillant sur le sujet "Groupe de structure des solutions ensemblistes de l'équation de Yang-Baxter".
+   Je suis actuellement ATER à Caen.
+
+J'ai défendu ma [Thèse](/files/Thesis.pdf) intitulée "Representatiοns οf structure grοup οf set-theοretical sοlutiοns
+tο the Υang-Baxter equatiοn" le 11 Octobre 2024, sous la direction de <a href="{{author.advisor}}"> Eddy Godelle</a>.
    
    Je recherche activement des post-doc. Vous pouvez lire mon [CV](/files/CV.pdf) et mon [Research Statement](/files/ResearchStatement.pdf) (en anglais).
 {% endif %}
