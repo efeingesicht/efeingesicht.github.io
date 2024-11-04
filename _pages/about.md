@@ -15,9 +15,9 @@ redirect_from:
   I am Teaching Assistant in Caen (France).
 
  I defended my [PhD Thesis](/files/Thesis.pdf) titled "Representatiοns οf structure grοup οf set-theοretical sοlutiοns
-tο the Υang-Baxter equatiοn" on October 11th 2024, under the supervision of <a href="{{author.advisor}}"> Eddy Godelle</a>
+tο the Υang-Baxter equatiοn" on October 11th 2024, under the supervision of <a href="{{author.advisor}}"> Eddy Godelle</a>.
 
-  I am actively looking for post-doctoral positions. You can read my [Resume](/files/Resume.pdf) and my [Research Statement](/files/ResearchStatement.pdf)
+  I am actively looking for post-doctoral positions. You can read my [Resume](/files/Resume.pdf) and my [Research Statement](/files/ResearchStatement.pdf).
 {% elsif site.lang == "fr" %}
   {% capture link2 %}{{ site.baseurl_root }}{{ page.url}}{% endcapture %}
   
