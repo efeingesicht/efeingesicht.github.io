@@ -86,18 +86,18 @@ author:
   location         : 
   employer         :
   pubmed           : 
-  googlescholar    : 
+  googlescholar    : https://scholar.google.com/citations?user=TiVoHjsAAAAJ&hl=fr&oi=ao
   email            : 
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
-  arxiv            :
+  arxiv            : https://arxiv.org/a/feingesicht_e_1.html
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           : 
+  github           : https://github.com/efeingesicht/
   google_plus      :
   hal              :
   keybase          :
@@ -105,7 +105,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : 
+  orcid            : https://orcid.org/0009-0001-3041-2909
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username

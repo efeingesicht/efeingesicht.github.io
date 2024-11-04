@@ -177,6 +177,7 @@ body:hover .visually-hidden button {
   position: relative;
   top: -0.1em;
   vertical-align: middle;
+  background-color: #fff;
 }
 
 /* social icons*/
@@ -213,6 +214,10 @@ body:hover .visually-hidden button {
   .fa-github-square {
     color: $github-color;
   }
+  
+  .fa-gitlab {
+    color: $gitlab-color;
+  }
 
   .fa-google-plus,
   .fa-google-plus-square {
@@ -231,6 +236,10 @@ body:hover .visually-hidden button {
   .fa-linkedin,
   .fa-linkedin-square {
     color: $linkedin-color;
+  }
+  
+  .fa-mastodon {
+    color: $mastodon-color;
   }
 
   .fa-pinterest,
@@ -282,7 +291,20 @@ body:hover .visually-hidden button {
   .fa-xing-square {
     color: $xing-color;
   }
+  
+  .ai-orcid,
+  .ai-orcid-square {
+    color: $orcid-color;
+  }
+
+  .ai-arxiv,
+  .ai-arxiv-square {
+    color: $arxiv-color;
+  }
+
 }
+
+
 
 
 /*
