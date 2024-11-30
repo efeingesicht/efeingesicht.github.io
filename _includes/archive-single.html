@@ -5,6 +5,15 @@
 {% else %}
   {% assign teaser = site.teaser %}
 {% endif %}
+{% if page.author and site.data.authors[page.author] %}
+  {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
+{% endif %}
+{% if page.author and site.data.authors[page.author] %}
+  {% assign author = site.data.authors[page.author] %}
+{% else %}
+{% assign author = site.author %}
+{% endif %}
+{% assign friends = site.friends %}
 
 {% if post.id %}
   {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
@@ -41,17 +50,20 @@
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
+                {% if post.with %}
+          	        <p style="margin-bottom:0;padding-top:0;margin : 0;"><i>{% t global.with %}</i> {{ post.with | markdownify | remove: '<p>' | remove: '</p>' | rstrip}}.</p>
+                {% endif %}
 		{% if post.venue == 'Preprint' %}
-          		<p style="display:inline"><i>{% t publi.preprint %}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+          		<p style="display:inline;margin-bottom:0;padding-top:0;margin : 0;;"><i>{% t publi.preprint %}</i>,</p>
 		{% elsif post.venue %}
-          		<p style="display:inline">{% t publi.in %} <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
-		{% endif %}         
+          		<p style="display:inline;margin-bottom:0;padding-top:0;margin : 0;">{% t publi.in %} <i>{{ post.venue }}</i>, </p>
+		{% endif %}
+                <p style="display:inline;margin-bottom:0;padding-top:0;margin : 0;">{{post.date| default: "1900-01-01" | date: "%Y" }}.</p>         
  {% elsif post.date %}
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
-        {% endif %}    
-           
+         <p style="display:inline;margin-bottom:0;padding-top:0;margin : 0;" class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+ {% endif %} 
     {% if post.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    <p style="margin-bottom:0;padding-top:0;margin : 0;" class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | remove: '<p>' | prepend:'<p style="display:inline;margin-bottom:0;padding-top:0;margin : 0;">' | rstrip}}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}

@@ -125,6 +125,7 @@
   }
 
   .archive__item-excerpt {
+    margin-top: 0;
     display: none;
   }
 
@@ -145,6 +146,7 @@
     }
 
     .archive__item-excerpt {
+      margin-top: 0;
       display: block;
       font-size: $type-size-6;
     }

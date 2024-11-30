@@ -7,8 +7,12 @@ venue: 'Preprint'
 paperurl: '/files/Indecomposability_Irreducibility.pdf'
 arxiv: '2409.10648'
 link:
+with:  '
+<a href="https://sites.google.com/view/carstendietzel/startseite" style="color: inherit; text-decoration: underline;">C. Dietzel</a>,
+<a href="https://properzi.github.io/" style="color: inherit; text-decoration: underline;">S. Properzi</a>
+'
 ---
-{% t global.download %}: [local]({{ page.paperurl }}), [arxiv](https://arxiv.org/abs/{{ page.arxiv }})
+{% t global.download %}: [local]({{ page.paperurl }}), [arxiv](https://arxiv.org/abs/{{ page.arxiv }}).
 
 This article investigates Dehornoy's monomial representations for structure groups and Coxeter-like groups of a set-theoretic solution to the Yang-Baxter equation.
 Using the brace structure of these two groups and the language of cycle sets, we relate the irreducibility of monomial representations to the indecomposability of the solutions. Furthermore, in the case of an indecomposable solution, we show how to obtain these representations by induction from explicit one-dimensional representations.

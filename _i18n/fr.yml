@@ -5,6 +5,8 @@ global:
   github: GitHub
   home: Accueil
   download: Téléchargement 
+  pronouns: Il/Lui
+  with: avec
 langs:
   en: English
 pages:

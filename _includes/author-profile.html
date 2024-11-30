@@ -18,8 +18,10 @@
 
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
-    {% if author.bio contains "{% t" %}<p class="author__bio">{% t config.bio %}.</p>
-    {% else if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    {% if author.bio contains "{% t" %}<p style="display:inline;margin-bottom:0;" class="author__bio">{% t config.bio %}.</p>
+    {% else if author.bio %}<p style="display:inline;margin-bottom:0;" class="author__bio">{{ author.bio }}</p>{% endif %}
+    {% if author.pronouns contains "{% t" %}<p style="margin : 0; padding-top:0;" class="author__pronouns">{% t global.pronouns %}.</p>
+    {% else if author.pronouns %}<p style="margin : 0; padding-top:0;" class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
   </div>
 
   <div class="author__urls-wrapper">
@@ -66,9 +68,6 @@
       {% endif %}
       {% if author.bitbucket %}
         <li><a href="https://bitbucket.org/{{ author.bitbucket }}"><i class="fab fa-fw fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
-      {% endif %}
-      {% if author.github %}
-        <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
       {% endif %}
       {% if author.stackoverflow %}
         <li><a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}"><i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
@@ -124,6 +123,9 @@
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
 {% endif %}
+      {% if author.github %}
+        <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+      {% endif %}
     </ul>
   </div>
 </div>

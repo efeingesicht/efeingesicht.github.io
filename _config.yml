@@ -82,6 +82,7 @@ author:
   name             : "Edouard Feingesicht"
   avatar           : "photo.jpg"
   bio              : "{% t global.tagline %}"
+  pronouns         : "{% t global.pronouns %}"
   advisor          : "https://godelle.users.lmno.cnrs.fr/"
   location         : 
   employer         :
@@ -118,6 +119,12 @@ author:
   youtube          :
   wikipedia        :
 
+friends:
+  CDietzel         : "https://sites.google.com/view/carstendietzel/startseite"
+  EGodelle         : "https://godelle.users.lmno.cnrs.fr/"
+  VLebed           : "https://lebed.users.lmno.cnrs.fr/"
+  SProperzi        : "https://properzi.github.io/"
+  LVendramin       : "https://leandrovendramin.org/"
 
 # Reading Files
 include:
