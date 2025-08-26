@@ -1,5 +1,5 @@
 ---
-title: "Indecomposability and irreducibility of monomial representations for set-theoretical solutions to the Yang-Baxter equation"
+title: "On Dehornoy's representation for the Yang-Baxter equation"
 collection: publications
 permalink: /publication/Indecomposability_Irreducibility
 date: 2024-09-16
