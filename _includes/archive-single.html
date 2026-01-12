@@ -54,9 +54,9 @@
           	        <p style="margin-bottom:0;padding-top:0;margin : 0;"><i>{% t global.with %}</i> {{ post.with | markdownify | remove: '<p>' | remove: '</p>' | rstrip}}.</p>
                 {% endif %}
 		{% if post.venue == 'Preprint' %}
-          		<p style="display:inline;margin-bottom:0;padding-top:0;margin : 0;;"><i>{% t publi.preprint %}</i>, </p>
+          		<p style="display:inline;margin-bottom:0;padding-top:0;margin : 0;;"><i>{% t publi.preprint %}</i>,&nbsp;</p>
 		{% elsif post.venue %}
-          		<p style="display:inline;margin-bottom:0;padding-top:0;margin : 0;">{% t publi.in %} <i>{{ post.venue }}</i>, </p>
+          		<p style="display:inline;margin-bottom:0;padding-top:0;margin : 0;">{% t publi.in %} <i>{{ post.venue }}</i>,&nbsp;</p>
 		{% endif %}
                 <p style="display:inline;margin-bottom:0;padding-top:0;margin : 0;">{{post.date| default: "1900-01-01" | date: "%Y" }}.</p>         
  {% elsif post.date %}

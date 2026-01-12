@@ -3,7 +3,7 @@ title: "Hecke algebras for set-theoretical solutions to the Yang--Baxter equatio
 collection: publications
 permalink: /publication/heckeYBE
 date: 2025-10-19
-venue: 'Accepted for publication by Journal of Algebra and its Applications.'
+venue: 'Accepted for publication by Journal of Algebra and its Applications'
 paperurl: '/files/heckeYBE.pdf'
 arxiv: '2411.00695'
 link:
