@@ -41,7 +41,7 @@ layout: default
           	        <p style="margin-bottom:0;padding-top:0;margin : 0;"><i>{% t global.with %}</i> {{page.with | markdownify | remove: '<p>' | remove: '</p>' | rstrip}}.</p>
                 {% endif %}
 		{% if page.venue == 'Preprint' %}
-          		<p style="display:inline;margin : 0; padding-top:0;"><i>{% t publi.preprint %}</i>,</p>
+          		<p style="display:inline;margin : 0; padding-top:0;"><i>{% t publi.preprint %}</i>, </p>
 		{% elsif page.venue %}
           		<p style="display:inline;margin : 0; padding-top:0;">{% t publi.in %} <i>{{ page.venue }}</i>, </p>
 		{% endif %}
