@@ -9,21 +9,30 @@ redirect_from:
 ---
 {% if site.lang == "en" %}
   {% capture link1 %}{{ site.baseurl_root }}/fr{{ page.url}}{% endcapture %}
-  Welcome on Edouard Feingesicht's academic website.
-======
- I am currently a post-doctoral researcher in Reims (France), working with <a href="{{author.postdoc1}}">Loïc Poulain d'Andecy</a>.
 
-  Before that I was a Teaching Assistant in Caen (France).
+# This website is not updated anymore. Please visit <a href="https://efeingesicht.perso.math.cnrs.fr">here</a>. 
 
- I defended my [PhD Thesis](/files/Thesis.pdf) titled "Representatiοns οf structure grοup οf set-theοretical sοlutiοns
+## Welcome on Edouard Feingesicht's academic website.
+
+---
+
+I am currently a postdoctoral researcher in Reims (France), working with <a href="{{author.postdoc1}}">Loïc Poulain d'Andecy</a>.
+
+Before that I was a Teaching Assistant in Caen (France).
+
+I defended my [PhD Thesis](/files/Thesis.pdf) titled "Representatiοns οf structure grοup οf set-theοretical sοlutiοns
 tο the Υang-Baxter equatiοn" on October 11th 2024, under the supervision of <a href="{{author.advisor}}"> Eddy Godelle</a>.
 
-  I am actively looking for post-doctoral positions. You can read my [Resume](/files/resume.pdf) and my [Research Statement](/files/ResearchStatement.pdf).
+I am actively looking for post-doctoral positions. You can read my [Resume](/files/resume.pdf) and my [Research Statement](/files/ResearchStatement.pdf).
+
 {% elsif site.lang == "fr" %}
   {% capture link2 %}{{ site.baseurl_root }}{{ page.url}}{% endcapture %}
-  
-  Bienvenue sur la page académique d'Edouard Feingesicht.
-======
+
+# Ce site n'est plus mis-à-jour. Rendez-vous <a href="https://efeingesicht.perso.math.cnrs.fr/fr">ici</a>.
+
+## Bienvenue sur la page académique d'Edouard Feingesicht.
+
+---
   
 Je suis actuellement post-doctorant à Reims, travaillant avec <a href="{{author.postdoc1}}">Loïc Poulain d'Andecy</a>.
 
@@ -32,5 +41,5 @@ Avant cela j'étais ATER à Caen.
 J'ai défendu ma [Thèse](/files/Thesis.pdf) intitulée "Representatiοns οf structure grοup οf set-theοretical sοlutiοns
 tο the Υang-Baxter equatiοn" le 11 Octobre 2024, sous la direction de <a href="{{author.advisor}}"> Eddy Godelle</a>.
    
-   Je recherche activement des post-doc. Vous pouvez lire mon [CV](/files/CV.pdf) et mon [Research Statement](/files/ResearchStatement.pdf) (en anglais).
+Je recherche activement des post-doc. Vous pouvez lire mon [CV](/files/CV.pdf) et mon [Research Statement](/files/ResearchStatement.pdf) (en anglais).
 {% endif %}
