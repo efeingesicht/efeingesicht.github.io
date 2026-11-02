@@ -290,17 +290,12 @@ DEPENDENCIES
   eventmachine (= 1.2.7)!
   github-pages
   hawkins
-  jekyll
   jekyll-feed
   jekyll-multiple-languages-plugin
   jekyll-sitemap
-  liquid (~> 4.0.4)
   tzinfo (~> 1.2)
   tzinfo-data
   webrick (~> 1.8)
-
-RUBY VERSION
-   ruby 3.1.6p260
 
 BUNDLED WITH
    2.5.3
