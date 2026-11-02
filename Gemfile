@@ -14,7 +14,9 @@ gem "github-pages", group: :jekyll_plugins
 # If you want to use Jekyll native, uncomment the line below.
 # To upgrade, run `bundle update`.
 
-# gem "jekyll"
+ruby "~> 3.1.6"
+gem "jekyll"
+gem "liquid", "~> 4.0.4"
 
 #gem "wdm", "~> 0.1.1" if Gem.win_platform?
 gem 'eventmachine', '1.2.7', git: 'https://github.com/eventmachine/eventmachine.git', tag: 'v1.2.7'
